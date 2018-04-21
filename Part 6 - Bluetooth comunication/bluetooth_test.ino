@@ -18,7 +18,7 @@ void loop()
   {
       BLUETOOTH_SERIAL_INPUT = Serial1.read(); 	/* Read data from serial port (bluetooth) and save to BLUETOOTH_SERIAL_INPUT variable	*/
   }
-  switch(BLUETOOTH_SERIAL_INPUT)
+  switch(BLUETOOTH_SERIAL_INPUT)              /*  Switch case instruction to control robot                                  */
   {
     case '1':
       Serial1.println("First test pass."); 		/* Write text: "First test pass." if read "1" from serial port (bluetooth).		*/
