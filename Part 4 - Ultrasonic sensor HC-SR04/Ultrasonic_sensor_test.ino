@@ -7,7 +7,7 @@
 #define ULTRASONIC_TRIG_PIN 11	/* Define witch pin will be HC-SR04 TRIG */
 #define ULTRASONIC_ECHO_PIN 12	/* Define witch pin will be HC-SR04 ECHO */
 
-int read_disaince()
+int read_distance()
 {
   long duration, distance;							/* Declarete duratuion and distance variable long type	*/
   digitalWrite(ULTRASONIC_TRIG_PIN, LOW);			/* Chance TRIG pin state to LOW							*/
@@ -37,6 +37,6 @@ void setup()
 
 void loop()
 {
-	Serial.println(read_disaince());	/* Print for serial result of function read_disaince() */
+	Serial.println(read_distance());	/* Print for serial result of function read_distance() */
 	delay(500);							/* Wait 0.5 second	*/
 }
